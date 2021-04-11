@@ -32,6 +32,14 @@ $(function(){
 
 ## Documentation
 
+### Install via npm
+
+You can get the project via npm too :
+
+```bash
+npm install jquery-imageflux
+```
+
 ### Plugin settings
 
 You can change plugin settings by passing an option object, example :
