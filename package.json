@@ -1,0 +1,37 @@
+{
+  "name": "jquery-imageflux",
+  "version": "0.0.1",
+  "description": "A jquery plugin for ImageFlux",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "image"
+  ],
+  "main": "build/jquery.imageflux.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chibiegg/jquery-imageflux.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chibiegg/jquery-imageflux/issues"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.7",
+    "uglify-js": "^3.4.9"
+  },
+  "scripts": {
+    "lint:js": "jshint src/assets/js/*.js",
+    "copy:js": "cp ./src/assets/js/jquery.imageflux.js ./build/jquery.imageflux.js",
+    "minify:js": "uglifyjs ./src/assets/js/jquery.imageflux.js --compress --mangle --source-map \"filename='./build/jquery.imageflux.min.map'\" -o ./build/jquery.imageflux.min.js",
+    "build": "npm run lint && npm run copy && npm run minify",
+    "lint": "npm run lint:js",
+    "copy": "npm run copy:js",
+    "minify": "npm run minify:js"
+  },
+  "author": "Yota EGUSA <chibiegg@chibiegg.net> (https://www.chibiegg.net/)",
+  "contributors": [],
+  "license": "MIT"
+}
